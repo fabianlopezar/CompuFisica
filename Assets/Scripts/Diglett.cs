@@ -8,7 +8,7 @@ public class Diglett : MonoBehaviour
     public float time = 0;
     void Start()
     {
-        time = 10;
+        time = 3;
     }
   
     void Update()
