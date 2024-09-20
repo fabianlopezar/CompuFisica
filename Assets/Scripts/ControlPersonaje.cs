@@ -21,9 +21,9 @@ public class ControlPersonaje : MonoBehaviour
     IEnumerator lanzarTopo()
     {
         topos[randomValue].GetComponent<Diglett>().Mostrar();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         topos[randomValue].GetComponent<Diglett>().Esconder();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         randomValue = Random.Range(0, 8);
         StartCoroutine("lanzarTopo");
         
