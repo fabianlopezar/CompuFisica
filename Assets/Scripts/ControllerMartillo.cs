@@ -6,6 +6,8 @@ public class ControllerMartillo : MonoBehaviour
 {
     public Animator animator;
     public Transform[] _positions;
+    public ParticleSystem[] polvos;
+    public int numeroPolvo;
     void Start()
     {
         
@@ -52,10 +54,10 @@ public class ControllerMartillo : MonoBehaviour
             Golpear(8);
         }
     }
-    public void Golpear(int posicion)
+    public void Golpear(int posicionActual)
     {
-        Debug.Log("soy la posicion"+ posicion);
-        transform.position = _positions[posicion].position;
+        numeroPolvo = posicionActual;
+        transform.position = _positions[posicionActual].position;
         animator.Play("animMartilloGolpe");
         
     }
@@ -98,5 +100,9 @@ public class ControllerMartillo : MonoBehaviour
             Golpear(8);
         }
 
+    }
+    public void ActivarPolvo()
+    {
+        polvos[numeroPolvo].Play();
     }
 }
