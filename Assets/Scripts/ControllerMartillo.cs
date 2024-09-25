@@ -109,10 +109,12 @@ public class ControllerMartillo : MonoBehaviour
     }
     public void ActivarPolvo()
     {
+        Debug.Log(""+numeroPolvo+" "+ controlTopos.GetComponent<ControlPersonaje>().randomValue);
         polvos[numeroPolvo].Play();
         if (numeroPolvo == controlTopos.GetComponent<ControlPersonaje>().randomValue)
         {
-            Debug.Log("Sumar punto.");
+
+
             puntos += 100;
             puntosText.text = puntos + "pts";
         }

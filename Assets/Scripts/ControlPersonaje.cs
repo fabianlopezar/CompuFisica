@@ -10,7 +10,8 @@ public class ControlPersonaje : MonoBehaviour
 
     void Start()
     {
-        randomValue = Random.Range(0, 8);
+        //randomValue = Random.Range(0, 8);
+        //randomValue = 5;
         StartCoroutine("lanzarTopo");
     }
 
@@ -24,7 +25,8 @@ public class ControlPersonaje : MonoBehaviour
         yield return new WaitForSeconds(1);
         topos[randomValue].GetComponent<Diglett>().Esconder();
         yield return new WaitForSeconds(1);
-        randomValue = Random.Range(0, 8);
+       
+       // randomValue = Random.Range(0, 8);
         StartCoroutine("lanzarTopo");
         
     }
