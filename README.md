@@ -1,6 +1,7 @@
 # Whack-a-Mole Game
 
 Welcome to the **Whack-a-Mole Game**, a fast-paced and fun arcade-style game where the player needs to hit the moles as they pop out of their holes. The game is built using **Unity** and features simple but engaging gameplay, perfect for players of all ages!
+Version de Unity Unity 2022.3.17f1
 
 ## Table of Contents
 - [Description](#description)
