@@ -1050,12 +1050,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235052895}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6264396, y: -46.103825, z: 35.075462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 597038072}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &235052897
 MonoBehaviour:
@@ -1989,8 +1989,6 @@ Transform:
   m_Children:
   - {fileID: 1879754894}
   - {fileID: 725174259}
-  - {fileID: 1362507106}
-  - {fileID: 235052896}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663892930
@@ -2861,7 +2859,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.33579564, g: 0.5647472, b: 0.9245283, a: 0}
+  m_BackGroundColor: {r: 0.8049716, g: 0.33725494, b: 0.9254902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3735,12 +3733,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362507105}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6264396, y: -46.103825, z: 35.075462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 597038072}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1362507107
 MonoBehaviour:
@@ -4938,7 +4936,7 @@ MonoBehaviour:
   secondTimerDuration: 5
   timerTMP: {fileID: 2107123783}
   controllerTopos: {fileID: 725174258}
-  sceneToLoad: Nivel-1
+  sceneToLoad: Nivel-2
 --- !u!4 &1879754894
 Transform:
   m_ObjectHideFlags: 0
@@ -28220,3 +28218,5 @@ SceneRoots:
   - {fileID: 584471604}
   - {fileID: 1778400815}
   - {fileID: 597038072}
+  - {fileID: 1362507106}
+  - {fileID: 235052896}

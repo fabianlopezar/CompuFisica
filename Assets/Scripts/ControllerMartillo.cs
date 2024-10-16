@@ -95,8 +95,7 @@ public class ControllerMartillo : MonoBehaviour
 
     }
     public void ActivarPolvo()
-    {
-        Debug.Log(""+numeroPolvo+" "+ controlTopos.GetComponent<ControlPersonaje>().randomValue);
+    {       
         polvos[numeroPolvo].Play();
         if (numeroPolvo == controlTopos.GetComponent<ControlPersonaje>().randomValue)
         {

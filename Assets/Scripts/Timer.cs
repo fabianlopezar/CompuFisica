@@ -52,14 +52,14 @@ public class Timer : MonoBehaviour
         {
             Debug.Log("Iniciando el segundo temporizador.");
             firstTimerDuration = 0; // Marcamos que el primer temporizador ya ha terminado
+            // Aquí puedes agregar otra lógica cuando ambos temporizadores terminen
+            stopTopos = true;  // Marcamos que los topos deben detenerse
+            controllerTopos.DetenerLanzarTopo();  // Detenemos la lógica de topos
             StartTimer(secondTimerDuration); // Inicia el segundo temporizador
         }
         else
         {
             Debug.Log("¡El segundo temporizador ha terminado!");
-            // Aquí puedes agregar otra lógica cuando ambos temporizadores terminen
-            stopTopos = true;  // Marcamos que los topos deben detenerse
-            controllerTopos.DetenerLanzarTopo();  // Detenemos la lógica de topos
 
             // Carga la nueva escena
             if (!string.IsNullOrEmpty(sceneToLoad)) // Verifica que la variable no esté vacía
