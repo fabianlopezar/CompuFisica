@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-
 public class ControllerMartillo : MonoBehaviour
 {
     public GameObject controlTopos;
@@ -11,15 +6,7 @@ public class ControllerMartillo : MonoBehaviour
     public Transform[] _positions;
     public ParticleSystem[] polvos;
     public int numeroPolvo;
-    public int puntos;
-    public TMP_Text puntosText;
-
-    void Start()
-    {
-        
-    }
-
-    
+               
     void Update()
     {
         //DetectarBoton();
@@ -113,10 +100,7 @@ public class ControllerMartillo : MonoBehaviour
         polvos[numeroPolvo].Play();
         if (numeroPolvo == controlTopos.GetComponent<ControlPersonaje>().randomValue)
         {
-
-
-            puntos += 100;
-            puntosText.text = puntos + "pts";
+            Puntos.Instance.SumarPuntos();//Sumo los puntos
         }
     }
 }
