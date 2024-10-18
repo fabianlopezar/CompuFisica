@@ -50,7 +50,7 @@ public class Timer : MonoBehaviour
         // Aquí puedes iniciar otro temporizador
         if (remainingTime == 0 && firstTimerDuration > 0)
         {
-            Debug.Log("Iniciando el segundo temporizador.");
+            
             firstTimerDuration = 0; // Marcamos que el primer temporizador ya ha terminado
             // Aquí puedes agregar otra lógica cuando ambos temporizadores terminen
             stopTopos = true;  // Marcamos que los topos deben detenerse
@@ -59,7 +59,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            Debug.Log("¡El segundo temporizador ha terminado!");
+            
 
             // Carga la nueva escena
             if (!string.IsNullOrEmpty(sceneToLoad)) // Verifica que la variable no esté vacía
