@@ -2896,7 +2896,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.33725494, g: 0.3634023, b: 0.9254902, a: 0}
+  m_BackGroundColor: {r: 0.9254902, g: 0.4465394, b: 0.33725494, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4974,7 +4974,7 @@ MonoBehaviour:
   secondTimerDuration: 5
   timerTMP: {fileID: 2107123783}
   controllerTopos: {fileID: 725174258}
-  sceneToLoad: Nivel-3
+  sceneToLoad: Final
 --- !u!4 &1879754894
 Transform:
   m_ObjectHideFlags: 0

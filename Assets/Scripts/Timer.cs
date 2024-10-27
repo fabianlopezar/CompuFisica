@@ -34,8 +34,7 @@ public class Timer : MonoBehaviour
         {
             yield return new WaitForSeconds(1f); // Espera 1 segundo
             remainingTime--;
-            timerTMP.text = remainingTime.ToString("F0"); // Actualiza el texto con el tiempo restante
-            //sDebug.Log("Tiempo restante: " + remainingTime);
+            timerTMP.text = remainingTime.ToString("F0"); // Actualiza el texto con el tiempo restante            
         }
 
         TimerFinished();
@@ -44,8 +43,7 @@ public class Timer : MonoBehaviour
     private void TimerFinished()
     {
         isTimerRunning = false;
-        timerTMP.text = "0"; // Establece el texto a 0 cuando el temporizador termina
-        //Debug.Log("¡El temporizador ha terminado!");
+        timerTMP.text = "0"; // Establece el texto a 0 cuando el temporizador termina        
 
         // Aquí puedes iniciar otro temporizador
         if (remainingTime == 0 && firstTimerDuration > 0)
@@ -58,9 +56,7 @@ public class Timer : MonoBehaviour
             StartTimer(secondTimerDuration); // Inicia el segundo temporizador
         }
         else
-        {
-            
-
+        {            
             // Carga la nueva escena
             if (!string.IsNullOrEmpty(sceneToLoad)) // Verifica que la variable no esté vacía
             {
