@@ -99,7 +99,7 @@ public class ControllerMartillo : MonoBehaviour
         polvos[numeroPolvo].Play();
         if (numeroPolvo == controlTopos.GetComponent<ControlPersonaje>().randomValue)
         {
-            Puntos.Instance.SumarPuntos();//Sumo los puntos
+            GameManager.Instance.SumarPuntos();//Sumo los puntos
         }
     }
 }

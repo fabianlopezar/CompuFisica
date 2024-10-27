@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 public class UpdateUI : MonoBehaviour
 {
@@ -8,7 +7,7 @@ public class UpdateUI : MonoBehaviour
 
     [Header("TMP")]        
     public TMP_Text _puntajeTMP;
-
+   
     private void Awake()
     {
         if (Instance == null)
@@ -30,7 +29,7 @@ public class UpdateUI : MonoBehaviour
   
     public void SetValuesUI()
     {
-        _puntajeTMP.text =  Puntos.Instance._puntos+"pts";     
+        _puntajeTMP.text =  GameManager.Instance._puntos+"pts";     
     }
     public void FindObjectName()
     {
@@ -38,11 +37,8 @@ public class UpdateUI : MonoBehaviour
             if (objetoEncontrado != null)
             {
                 _puntajeTMP = objetoEncontrado.GetComponent<TMP_Text>();//Le asigno el valor a la variable encontrada.
-            }
-        
-    }
-
-    
+            }        
+    }    
     private void OnEnable()
     {
         // Suscribirse al evento de escena cargada
@@ -62,5 +58,5 @@ public class UpdateUI : MonoBehaviour
         FindObjectName();
         SetValuesUI();
         //      Debug.Log("Cambio de escena detectado. Se cargó la escena: " + scene.name);
-    }
+    }    
 }

@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class Puntos : MonoBehaviour
+
+public class GameManager : MonoBehaviour
 {
-    public static Puntos Instance { get; private set; }
+    public static GameManager Instance { get; private set; }
     
     public int _puntos { get; set; }
     public string _namePlayer;
@@ -26,6 +27,6 @@ public class Puntos : MonoBehaviour
     }
     public void ObtenerNombrePlayer(string nombrePlayer)
     {
-        Puntos.Instance._namePlayer = nombrePlayer;
+        GameManager.Instance._namePlayer = nombrePlayer;
     }
 }
