@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangePrefabTopo : MonoBehaviour
@@ -44,6 +42,6 @@ public class ChangePrefabTopo : MonoBehaviour
         // Actualizar el array de topos para reflejar el cambio
         topos[numeroTopo] = nuevoTopo;
 
-        Debug.Log("Prefab del topo cambiado exitosamente y colocado en la misma jerarquía.");
+
     }
 }

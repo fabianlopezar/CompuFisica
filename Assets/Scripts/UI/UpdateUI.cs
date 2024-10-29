@@ -29,15 +29,16 @@ public class UpdateUI : MonoBehaviour
   
     public void SetValuesUI()
     {
-        _puntajeTMP.text =  GameManager.Instance._puntos+"pts";     
+        if (_puntajeTMP != null)
+        {
+            _puntajeTMP.text = GameManager.Instance._puntos + "pts";
+        }
+
     }
     public void FindObjectName()
     {
             GameObject objetoEncontrado = GameObject.Find("puntosTMP");
-            if (objetoEncontrado != null)
-            {
-                _puntajeTMP = objetoEncontrado.GetComponent<TMP_Text>();//Le asigno el valor a la variable encontrada.
-            }        
+        _puntajeTMP = objetoEncontrado ? objetoEncontrado.GetComponent<TMP_Text>() : null;
     }    
     private void OnEnable()
     {
