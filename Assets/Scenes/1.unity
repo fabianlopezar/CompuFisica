@@ -660,7 +660,7 @@ MonoBehaviour:
   secondTimerDuration: 5
   timerTMP: {fileID: 7277983229146551790}
   controllerTopos: {fileID: 8903266003363898716}
-  sceneToLoad: Nivel-2
+  sceneToLoad: 2
 --- !u!23 &470117648852509242
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8546,7 +8546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5892093798365868506}
   m_Layer: 0
-  m_Name: Controladores
+  m_Name: -- Controladores --
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

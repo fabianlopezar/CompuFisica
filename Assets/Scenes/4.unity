@@ -5446,7 +5446,7 @@ MonoBehaviour:
   secondTimerDuration: 5
   timerTMP: {fileID: 9175352035467550483}
   controllerTopos: {fileID: 2927032159309984761}
-  sceneToLoad: Nivel-5
+  sceneToLoad: 5
 --- !u!95 &5121646870630631579
 Animator:
   serializedVersion: 5

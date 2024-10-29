@@ -10235,7 +10235,7 @@ MonoBehaviour:
   secondTimerDuration: 5
   timerTMP: {fileID: 8612089209399386218}
   controllerTopos: {fileID: 1816639802958668898}
-  sceneToLoad: Nivel-3
+  sceneToLoad: 3
 --- !u!114 &8782642865235837084
 MonoBehaviour:
   m_ObjectHideFlags: 0
