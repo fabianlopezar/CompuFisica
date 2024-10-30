@@ -11,4 +11,10 @@ public class UIFinal : MonoBehaviour
         _puntajeAlto.text = "" + GameManager.Instance._puntos;
         _nombre.text = "" + GameManager.Instance._namePlayer;
     }
+
+    public void SaveDataFunction()
+    {
+        SaveData.instance.SaveDataToJson(GameManager.Instance._namePlayer, GameManager.Instance._puntos);
+    }
+
 }
