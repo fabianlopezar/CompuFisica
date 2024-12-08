@@ -42,6 +42,10 @@ The game is designed with a fun, colorful, and interactive interface, and it's a
 ![Game Screenshot 1](./screenshots/screenshot1.png)
 ![Game Screenshot 2](./screenshots/screenshot2.png)
 
+https://github.com/user-attachments/assets/822cf5cc-513b-41be-ae0c-ce0ef296017f
+
+
+
 ## Installation
 
 To install and play the game locally, follow these steps:
